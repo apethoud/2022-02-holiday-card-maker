@@ -1,4 +1,8 @@
-export default function Preview() {
-    return <div>Preview</div>;
-}
+export default function Preview(props) {
+    return (
+      <>
+        <div>This is the preview for {props.name}</div>
+      </>
+    );
+  }
   

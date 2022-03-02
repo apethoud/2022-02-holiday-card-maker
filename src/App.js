@@ -7,7 +7,7 @@ export default function App() {
   return (
     <Wrapper>
       <Form />
-      <Preview />
+      <Preview name="Akiko" />
     </Wrapper>
   );
 }
