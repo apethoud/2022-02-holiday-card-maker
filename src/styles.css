@@ -1,17 +1,62 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
 
 .App {
-  font-family: sans-serif;
+  font-family: "PT Sans", sans-serif;
   text-align: center;
 }
 
-.AppBackground {
-  background: #ccc;
-}
-
-div,
-p,
 input,
 select {
-  font-family: "Open Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
+}
+
+.FlexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.Header {
+  background-color: #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HeaderText {
+  margin: 6px 10px;
+  font-family: "Lobster Two", cursive;
+  font-size: 24px;
+}
+
+.HeaderSubtext {
+  margin: 6px 10px;
+  font-style: italic;
+}
+
+.FormContainer {
+  box-shadow: 0px 2px 4px #ccc;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.SectionTitle {
+  font-weight: 700;
+}
+
+.FormFieldContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.PreviewContainer {
+  box-shadow: 0px 2px 4px #ccc;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+.PreviewTextBlock {
+  margin: 20px;
 }
