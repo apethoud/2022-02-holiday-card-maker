@@ -23,6 +23,10 @@ export default function Form() {
     event.preventDefault();
   }
 
+  function logEmail() {
+    console.log("emailRef.current.value is: ", emailRef.current.value);
+  }
+
   return (
     <>
       <form onSubmit={handleSubmit}>
@@ -35,6 +39,11 @@ export default function Form() {
         />
         <button type="submit">Submit</button>
       </form>
+      <div>To: {to}</div>
+      <div>From: {from}</div>
+      <button type="button" onClick={() => logEmail()}>
+        Log Email Address to Console
+      </button>
     </>
   );
 }
