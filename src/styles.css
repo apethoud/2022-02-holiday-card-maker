@@ -1,3 +1,9 @@
-.AppBackground {
-    background: yellow;
+.App {
+  font-family: sans-serif;
+  text-align: center;
 }
+  
+.AppBackground {
+  background: #ccc;
+}
+  
