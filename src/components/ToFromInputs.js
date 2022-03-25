@@ -1,10 +1,12 @@
+import { Input, Label } from "./StyledComponents";
+
 export default function ToFromInputs(props) {
   return (
     <div>
       {/* "To" input (controlled) */}
       <div>
-        <label htmlFor="to">To</label>
-        <input
+        <Label htmlFor="to">To</Label>
+        <Input
           name="to"
           value={props.to}
           onChange={(event) => props.setTo(event.target.value)}
@@ -12,8 +14,8 @@ export default function ToFromInputs(props) {
       </div>
       {/* "From" input (controlled) */}
       <div>
-        <label htmlFor="from">From</label>
-        <input
+        <Label htmlFor="from">From</Label>
+        <Input
           name="from"
           value={props.from}
           onChange={(event) => props.setFrom(event.target.value)}
@@ -21,8 +23,8 @@ export default function ToFromInputs(props) {
       </div>
       {/* "Email" input (uncontrolled) */}
       <div>
-        <label htmlFor="email">Email</label>
-        <input name="email" type="email" ref={props.emailRef} />
+        <Label htmlFor="email">Email</Label>
+        <Input name="email" type="email" ref={props.emailRef} />
       </div>
     </div>
   );
