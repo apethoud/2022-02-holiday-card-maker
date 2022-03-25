@@ -1,13 +1,12 @@
 import "./styles.css";
-import Form from "./Form";
-import Preview from "./Preview";
-import Wrapper from "./Wrapper";
+import Form from "./features/Form";
+import Preview from "./features/Preview";
+import Wrapper from "./components/Wrapper";
 
 export default function App() {
   return (
     <Wrapper>
       <Form />
-      <Preview name="Akiko" />
     </Wrapper>
   );
 }
