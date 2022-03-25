@@ -2,7 +2,7 @@ import { useState } from "react";
 import RecipientSection from "./formSections/RecipientSection";
 import DesignSection from "./formSections/DesignSection";
 import SenderSection from "./formSections/SenderSection";
-import { Button, ColumnContainer } from "./StyledComponents";
+import { FormContainer, ColumnContainer, Button } from "./StyledComponents";
 import FormSection from "./formSections/FormSection";
 
 export default function CardForm(props) {
@@ -31,7 +31,7 @@ export default function CardForm(props) {
 
   return (
     <ColumnContainer>
-      <div className="FormContainer">
+      <FormContainer>
         <form onSubmit={handleSubmit}>
           <FormSection title="Who is this for?">
             <RecipientSection
@@ -62,7 +62,7 @@ export default function CardForm(props) {
             </Button>
           </div>
         </form>
-      </div>
+      </FormContainer>
     </ColumnContainer>
   );
 }

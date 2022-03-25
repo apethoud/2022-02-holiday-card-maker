@@ -1,4 +1,4 @@
-import { Label, Select } from "../StyledComponents";
+import { Label, Select, Text } from "../StyledComponents";
 import useHolidayList from "../customHooks/useHolidayList";
 
 export default function DesignSection(props) {
@@ -23,7 +23,7 @@ export default function DesignSection(props) {
           </Select>
         </div>
       ) : (
-        <div style={{ fontStyle: "italic" }}>Getting holidays...</div>
+        <Text style={{ fontStyle: "italic" }}>Getting holidays...</Text>
       )}
     </>
   );

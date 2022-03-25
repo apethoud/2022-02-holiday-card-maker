@@ -1,10 +1,14 @@
-import { FormSectionColumn, StyledFormSection } from "../StyledComponents";
+import {
+  FormSectionColumn,
+  StyledFormSection,
+  SectionTitle,
+} from "../StyledComponents";
 
 export default function FormSection(props) {
   return (
     <StyledFormSection>
       <FormSectionColumn style={{ width: "calc(50% - 40px)" }}>
-        <div className="SectionTitle">{props.title}</div>
+        <SectionTitle>{props.title}</SectionTitle>
       </FormSectionColumn>
       <FormSectionColumn style={{ width: "calc(50% - 40px)" }}>
         {props.children}
