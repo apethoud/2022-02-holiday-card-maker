@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import ToFromInputs from "../components/ToFromInputs";
+import { Button } from "../components/StyledComponents";
 
 export default function Form() {
   const [month, setMonth] = useState(3);
@@ -37,13 +38,16 @@ export default function Form() {
           setFrom={setFrom}
           emailRef={emailRef}
         />
-        <button type="submit">Submit</button>
+        <Button type="button">Cancel</Button>
+        <Button primary type="submit">
+          Submit
+        </Button>
       </form>
       <div>To: {to}</div>
       <div>From: {from}</div>
-      <button type="button" onClick={() => logEmail()}>
+      <Button type="button" onClick={() => logEmail()}>
         Log Email Address to Console
-      </button>
+      </Button>
     </>
   );
 }

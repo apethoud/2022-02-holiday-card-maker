@@ -1,9 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
 .App {
   font-family: sans-serif;
   text-align: center;
 }
-  
+
 .AppBackground {
   background: #ccc;
 }
-  
+
+div,
+p,
+input,
+select {
+  font-family: "Open Sans", sans-serif;
+}
