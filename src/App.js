@@ -1,14 +1,13 @@
 import "./styles.css";
+import { AppContainer } from "./components/StyledComponents";
 import AppHeader from "./components/AppHeader";
 import CardBuilder from "./components/CardBuilder";
 
 export default function App() {
   return (
-    <div className="App">
+    <AppContainer>
       <AppHeader />
-      <div className="ViewContainer">
-        <CardBuilder />
-      </div>
-    </div>
+      <CardBuilder />
+    </AppContainer>
   );
 }
