@@ -1,13 +1,15 @@
 import "./styles.css";
-import Form from "./Form";
-import Preview from "./Preview";
-import Wrapper from "./Wrapper";
+import { AppContainer } from "./components/StyledComponents";
+import AppHeader from "./components/AppHeader";
+import { Outlet } from "react-router-dom";
 
 export default function App() {
   return (
-    <Wrapper>
-      <Form />
-      <Preview />
-    </Wrapper>
+    <AppContainer>
+      <AppHeader />
+      <div className="ViewContainer">
+        <Outlet />
+      </div>
+    </AppContainer>
   );
 }
